@@ -24,6 +24,7 @@ import {
 function App() {
     return (
         <Navbar/>
+        
     );
 }
 

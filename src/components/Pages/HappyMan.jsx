@@ -9,6 +9,7 @@ class HappyMan extends React.Component {
       <div id="happyMan">
         <img src="../img/HappyMan.jpg" alt="icone happy man"></img>
 
+
       </div>
         
     )

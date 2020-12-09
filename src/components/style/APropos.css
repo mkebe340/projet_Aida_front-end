@@ -1,0 +1,12 @@
+.container{
+   display: flex;
+   text-align: justify;
+}
+h1{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.image{
+    margin-right: 10px;
+}

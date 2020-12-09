@@ -1,8 +1,15 @@
+.tag{
+    display: flex;
+    align-items: center;
+}
 .NavLink h1 {
-    color: #707070e3;
+    color: black;
 }
 
 .fa-hands-helping {
-    color: #707070e3;
-
+ color: #707070e3;
+ padding-right: 100px;
+ font-size: 50px;
+ margin: 0px;
+ padding: 0px;
 }

@@ -1,12 +1,13 @@
+
 import React from 'react';
 
-class Contact extends React.Component {
+class Home extends React.Component {
 
     render() {
         return (
 
             <div>
-                <h1>Contact </h1>
+                <h1> Home </h1>
 
             </div>
 
@@ -16,4 +17,4 @@ class Contact extends React.Component {
 
 
 
-export default Contact;
+export default Home;     

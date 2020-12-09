@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from './NavBarElements';
-
+import Inspirations from './Inspirations'
 
 
 function Navbar() {
@@ -13,7 +13,7 @@ function Navbar() {
             <Nav>
                 <NavLink className='NavLink' to='/'>
                     <h1>
-                        <i class="fas fa-hands-helping"></i> INSPIRE.FR
+                        <i class="fas fa-hands-helping"></i> INSPIRENEWS.FR
                     </h1>
                 </NavLink>
                 <Bars />
@@ -34,10 +34,11 @@ function Navbar() {
                 <NavBtn>
                     <NavBtnLink to='connexion'>Connexion</NavBtnLink>
                 </NavBtn>
-            </Nav>
 
+            </Nav>
+            <Inspirations />
         </>
     )
 }
 
-export default Navbar
+export default Navbar;

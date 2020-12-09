@@ -1,6 +1,8 @@
+import 'bootstrap/dist/css/bootstrap.min.css'
 import styled from 'styled-components';
 import { NavLink as Link } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa'
+
 
 
 export const Nav = styled.nav`
@@ -55,6 +57,8 @@ export const NavBtn = styled.nav`
     display: flex;
     align-items: center;
     margin-right: 24px;
+    
+    
 
     @media screen and (max-width: 768px) {
         display: none;
@@ -71,6 +75,7 @@ export const NavBtnLink = styled(Link)`
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
+    
 
     &:hover {
         transition: all 0.2s ease-in-out;

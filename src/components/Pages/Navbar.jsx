@@ -24,13 +24,37 @@ class Navbar extends React.Component {
             <div>
                 <Router>
                     <nav>
-                        <ul>
-                            <li><Link to="/">Home</Link></li>
-                            <li><Link to="/APropos/">A Propos</Link></li>
-                            <li><Link to="/Inspirations/">Nos Sources d'Inspirations</Link></li>
-                            <li><Link to="/QuiSommesNous/">Qui Sommes Nous</Link></li>
-                            <li><Link to="/contact/">Contact</Link></li>
-                        </ul>
+
+                        <NavLink className='NavLink' to='/'>
+                            <h1>
+                                <i class="fas fa-hands-helping"></i> INSPIRENEWS.FR
+         </h1>
+                        </NavLink>
+                        <Bars />
+                        <NavMenu>
+                            <NavLink to='/' activeStyle>
+                                Home
+         </NavLink>
+                            <NavLink to='/APropos' activeStyle>
+                                À propos
+         </NavLink>
+                            <NavLink to='/Inspirations' activeStyle>
+                                Nos sources d'inspiration
+         </NavLink>
+                            <NavLink to='/QuiSommesNous' activeStyle>
+                                Qui sommes-nous ?
+         </NavLink>
+                            <NavLink to='/Contact' activeStyle>
+                                Contact
+         </NavLink>
+                        </NavMenu>
+                        <NavBtn>
+                            <NavBtnLink to='connexion'>Connexion</NavBtnLink>
+                        </NavBtn>
+
+
+
+
                     </nav>
 
                     <Switch>
@@ -70,7 +94,17 @@ export default Navbar;
 
 
 
-/* <Nav>
+/*
+                        <ul>
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/APropos/">A Propos</Link></li>
+                            <li><Link to="/Inspirations/">Nos Sources d'Inspirations</Link></li>
+                            <li><Link to="/QuiSommesNous/">Qui Sommes Nous</Link></li>
+                            <li><Link to="/contact/">Contact</Link></li>
+                        </ul>
+
+
+<Nav>
      <NavLink className='NavLink' to='/'>
          <h1>
              <i class="fas fa-hands-helping"></i> INSPIRENEWS.FR

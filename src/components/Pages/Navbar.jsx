@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import '../style/Navbar.css'
 import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from './NavBarElements';
 import {
     BrowserRouter as Router,
@@ -23,73 +24,65 @@ class Navbar extends React.Component {
 
             <div>
                 <Router>
-                    <nav>
-
-                        <NavLink className='NavLink' to='/'>
-                            <h1>
-                                <i class="fas fa-hands-helping"></i> INSPIRENEWS.FR
-         </h1>
+                    <Nav>
+                        <NavLink  to='/'>
+                            <div className='tag'>
+                      <i className="fas fa-hands-helping"></i> 
+                         <div className='NavLink'>
+                             <h1> INSPIRENEWS.FR</h1>
+                            </div> 
+                            </div>  
                         </NavLink>
-                        <Bars />
+
+                        <Bars/>
                         <NavMenu>
-                            <NavLink to='/' activeStyle>
+                                <NavLink to='/' activeStyle>
                                 Home
-         </NavLink>
-                            <NavLink to='/APropos' activeStyle>
+                                </NavLink>
+                                <NavLink to='/APropos' activeStyle>
                                 À propos
-         </NavLink>
-                            <NavLink to='/Inspirations' activeStyle>
-                                Nos sources d'inspiration
-         </NavLink>
-                            <NavLink to='/QuiSommesNous' activeStyle>
-                                Qui sommes-nous ?
-         </NavLink>
-                            <NavLink to='/Contact' activeStyle>
+                                </NavLink>
+                                <NavLink to='/Contact' activeStyle>
                                 Contact
-         </NavLink>
-                        </NavMenu>
-                        <NavBtn>
-                            <NavBtnLink to='connexion'>Connexion</NavBtnLink>
-                        </NavBtn>
-
-
-
-
-                    </nav>
+                                </NavLink>
+                                <NavLink to='/Inspirations' activeStyle>
+                                Nos sources d'inspiration
+                                </NavLink>
+                                <NavLink to='/QuiSommesNous' activeStyle>
+                                Qui sommes-nous ?
+                                </NavLink>
+                        </NavMenu>  
+                    </Nav>
 
                     <Switch>
                         <Route path="/APropos/">
                             <APropos />
                         </Route>
+
                         <Route path="/Contact/">
                             <Contact />
                         </Route>
 
-
                         <Route path="/Inspirations/">
                             <Inspirations />
-
                         </Route>
+
                         <Route path="/QuiSommesNous/">
                             <QuiSommesNous />
-
                         </Route>
+
                         <Route path="/">
                             <Home />
                         </Route>
-
                     </Switch>
+
                 </Router>
 
 
             </div>
-
-
-
         )
     }
 }
-
 export default Navbar;
 
 
@@ -130,4 +123,4 @@ export default Navbar;
      </NavBtn>
 
  </Nav>
- <Inspirations/>*/
+ */

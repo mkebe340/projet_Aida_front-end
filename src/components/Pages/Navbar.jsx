@@ -25,33 +25,38 @@ class Navbar extends React.Component {
             <div>
                 <Router>
                     <Nav>
-                        <NavLink  to='/'>
+                        <NavLink to='/'>
                             <div className='tag'>
-                      <i className="fas fa-hands-helping"></i> 
-                         <div className='NavLink'>
-                             <h1> INSPIRENEWS.FR</h1>
-                            </div> 
-                            </div>  
+                                <i className="fas fa-hands-helping"></i>
+                                <div className='NavLink'>
+                                    <h1> INSPIRENEWS.FR</h1>
+                                </div>
+                            </div>
                         </NavLink>
 
-                        <Bars/>
+                        <Bars />
                         <NavMenu>
-                                <NavLink to='/' activeStyle>
+                            {/* <NavLink to='/' activeStyle> */}
+                            <NavLink to='/'>
                                 Home
                                 </NavLink>
-                                <NavLink to='/APropos' activeStyle>
+                            {/* <NavLink to='/APropos' activeStyle> */}
+                            <NavLink to='/APropos'>
                                 À propos
                                 </NavLink>
-                                <NavLink to='/Contact' activeStyle>
+                            {/* <NavLink to='/Contact' activeStyle> */}
+                            <NavLink to='/Contact'>
                                 Contact
                                 </NavLink>
-                                <NavLink to='/Inspirations' activeStyle>
+                            {/* <NavLink to='/Inspirations' activeStyle> */}
+                            <NavLink to='/Inspirations'>
                                 Nos sources d'inspiration
                                 </NavLink>
-                                <NavLink to='/QuiSommesNous' activeStyle>
+                            {/* <NavLink to='/QuiSommesNous' activeStyle> */}
+                            <NavLink to='/QuiSommesNous'>
                                 Qui sommes-nous ?
                                 </NavLink>
-                        </NavMenu>  
+                        </NavMenu>
                     </Nav>
 
                     <Switch>

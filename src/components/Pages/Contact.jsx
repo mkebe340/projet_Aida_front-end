@@ -11,13 +11,16 @@ class Contact extends React.Component {
                 <h1>Contact </h1>
                 <div className="container test ">
                     <div className='row justify-content-center'>
-                        <div className="col-6 color mt-5">
-
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <div className="col-6 color mt-5 ">
+                            <div className="mt-3"> 
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Earum temporibus dolorum maxime voluptates magni vel
                             reprehenderit rem? Asperiores nam nostrum earum eos,
                             incidunt quo, ducimus neque, nemo optio cumque
                              ratione.</p>
+
+                             </div>
+                           
                         </div>
 
 
@@ -26,9 +29,9 @@ class Contact extends React.Component {
                             <div className="col-6 " >
 
                                 <form>
-                                    <input className='text' ></input>
-                                    <input className='text' ></input>
-                                    <input className='text' ></input>
+                                  <p> nom de l'assos: <input className='text' ></input></p>
+                                  <p> email: <input className='text' ></input></p>
+                                  <p> message: <input className='text' ></input></p>
                                 </form>
                                 <button>envoyer</button>
                             </div>

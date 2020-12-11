@@ -57,7 +57,7 @@ class QuiSommesNous extends React.Component {
                             </div>
 
                         </div>
-                        <div className="Texte1 col-6 col-xs-12">
+                        <div className="Texte1 col-6 col-xs-12 text-justify">
 
                             
                                 <h3>Aïda TOUIHRI, fondatrice d'INSPIRENEWS</h3>

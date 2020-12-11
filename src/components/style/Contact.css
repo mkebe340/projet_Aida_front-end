@@ -1,0 +1,28 @@
+/*.fond{
+   
+    background-color: pink;
+   border: solid purple 1px;
+    width: 500px;
+    height: 800px;
+    border-radius: 30px;
+   
+}*/
+
+.color{
+   
+    
+   /* width: 200px;
+   border: solid black 1px;*/
+   background-color: rgb(91, 20, 223);
+   color: white;
+    height: 250px;
+    border-radius: 30px;
+}
+
+.test{
+    background-color: rgb(233, 229, 170);
+    border: solid black 1px;
+    width: 500px;
+    height: 800px;
+    border-radius: 30px;
+}

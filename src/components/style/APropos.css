@@ -1,12 +1,13 @@
-.container{
-   display: flex;
-   text-align: justify;
+.container {
+    display: flex;
+    text-align: justify;
 }
-h1{
+
+h1 {
     text-align: center;
     margin-top: 15px;
 }
 
-.image{
+.image {
     margin-right: 10px;
 }

@@ -6,42 +6,104 @@ class APropos extends React.Component {
     render() {
         return (
 
-            <div >
-                <h1>Titre A propos </h1>
+            <div className='propos'>
+                <h1>A propos </h1>
                 <div className='container'>
 
-                    <div className='image'>
-                        <img src='./img/dog.jpg' alt='description' />
+                    <div className='row'>
+                        <div className="slide1 col-6 col-xs-12 ">
+                            <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
+                                <ol className="carousel-indicators">
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="0" className="active"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                                </ol>
+                                <div className="carousel-inner">
+                                    <div className="carousel-item active ">
+                                        <img src="../img/Portrait.jpg" alt="..." className="img-fluid" />
+                                        <div className="carousel-caption">
+
+                                            {/* <p>Crédit photo : </p>*/}
+                                        </div>
+                                    </div>
+                                    <div className="carousel-item ">
+                                        <img src="../img/Report_3.jpg" alt="..." className="img-fluid" />
+                                        <div className="carousel-caption">
+
+                                            {/* <p>crédit photo : </p>*/}
+                                        </div>
+                                    </div>
+                                    <div className="carousel-item  ">
+                                        <img src="../img/Report_1.jpg" alt="..." className="img-fluid" />
+                                        <div className="carousel-caption">
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <a className="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span className="sr-only">Previous</span>
+                                </a>
+                                <a className="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span className="sr-only">Next</span>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div className="propos_text col-6 col-xs-12 text-justify">
+                            <h2>Pourquoi INPIRENEWS?</h2>
+                            <p>
+                                "Allumez la radio ou la télé. Ouvrez un magazine d’actualité. De quoi parle-t-on aujourd’hui ?
+                                Comme hier, et comme le veut la règle d’or du journalisme, on vous racontera d’abord les
+                                malheurs du monde : des catastrophes naturelles aux faits divers les plus sordides,
+                                 en passant par les polémiques aussi inutiles que blessantes.<br></br>
+                                 Pour reprendre les mots d’Albert Londres, figure totémique de la presse du
+                                 XXème siècle, « un journaliste n’est pas un enfant de chœur (…)
+                                 Notre métier n’est pas de faire plaisir, ni de faire du tort, il est de porter
+                                 la plume dans la plaie. » De là cette tendance, rarement démentie aujourd’hui,
+                                 de ne parler que « des trains qui arrivent en retard ». En clair : de ce qui
+                                 ne va pas. Et après ? Qu’est-ce qu’on en fait ? Regarder le malheur des autres
+                                 n’a jamais fait avancer personne. Et si on trouve un moyen efficace de faire
+                                 arriver ce fameux train à l’heure, à quel moment on en parle ? Qu’est-ce qu’on fait
+                                  de cette solution ? Ne mérite-t-elle pas d’être portée à l’attention du public ?
+                            </p>
+                            <p>
+                                Cette réflexion, je me la suis faite au cours de mes quelques vingt ans de présentation de JT
+                                et autres magazines d’information. Et davantage encore ces deux dernières années
+                                passées à sillonner la France à la rencontre de celles et ceux qui oeuvrent à changer
+                                leur quotidien, et ainsi celui des autres. A leur échelle, ils changent le monde. Ils
+                                le réinventent, et parfois même le réenchantent. Et pourtant, ils font rarement la
+                                Une de l’actualité…
+                            </p>
+                            
+                                De la rencontre de ces hommes et ces femmes engagés, à titre individuel, dans leur
+                                quartier, au sein d’une association ou en entreprise, est née cette volonté de les
+                                mettre en lumière.  Nous avons tant à apprendre de ces personnes inspirantes, de ces
+                                initiatives qui nous donnent à voir un avenir meilleur que la désespérance prônée par
+                                des médias déclinistes. Faut-il vraiment s’étonner que la presse perde en crédibilité
+                                chaque année ? Que la profession de journaliste soit aujourd’hui si décriée ? Que la
+                                jeune génération, X, Y, ou Z, cherche des sources d’information alternatives aux médias
+                                traditionnels ?
+                               <p>
+                                    Loin de nous l’idée d’occulter les problématiques du monde comme il va. Le pays des
+                                 Bisounours n’est pas plus notre modèle que Gotham City. Mais chaque solution doit
+                                  être traitée de la même manière que le problème lui-même. Ni plus, ni moins.
+                                </p>
+                            <p>
+                                Cette plateforme que nous vous proposons aujourd’hui, nous l’avons pensée comme une 
+                                inspiration pour toutes celles et ceux qui veulent agir plutôt que subir. Certes, 
+                                les défis de notre époque sont innombrables. Mais des solutions existent, et elles 
+                                ne sont pas moins nombreuses. Aujourd’hui source de souffrance, voire d’impuissance, 
+                                le journalisme peut et doit être source d’espérance. Si l’homme est capable du pire, 
+                                nous voulons - aussi- révéler le meilleur. Ce n’est pas une utopie. C’est une réaction 
+                                citoyenne. Et elle est à portée de clic."
+                            </p>
+                        </div>
                     </div>
-
-                    <div>
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur
-                            adipisicing elit. Pariatur expedita
-                            officia, quaerat aliquid adipisci
-                            rerum praesentium voluptas aut itaque
-                            nostrum non, rem, quos harum vel minus.
-                            Fuga officiis nulla maiores? <br/>
-                            Lorem, ipsum dolor sit amet consectetur 
-                            adipisicing elit. Quasi at nisi, commodi ea 
-                            similique quam tempore inventore sunt qui dolorum quo,
-                             est repellendus error labore suscipit esse quibusdam 
-                             non provident?
-                             Lorem ipsum dolor, sit amet consectetur
-                            adipisicing elit. Pariatur expedita
-                            officia, quaerat aliquid adipisci
-                            rerum praesentium voluptas aut itaque
-                            nostrum non, rem, quos harum vel minus.
-                            Fuga officiis nulla maiores?
-                            Lorem, ipsum dolor sit amet consectetur 
-                            adipisicing elit. Quasi at nisi, commodi ea 
-                            similique quam tempore inventore sunt qui dolorum quo,
-                             est repellendus error labore suscipit esse quibusdam 
-                             non provident?
-                        </p>
-                    </div>
-
-
                 </div>
             </div>
 

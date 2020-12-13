@@ -1,13 +1,16 @@
-.container {
+.propos>.container {
     display: flex;
     text-align: justify;
 }
 
-h1 {
-    text-align: center;
-    margin-top: 15px;
+.propos > h1 {
+  margin-left: 15px;
 }
 
 .image {
     margin-right: 10px;
+}
+
+.propos_text > p{
+    text-align: justify;
 }

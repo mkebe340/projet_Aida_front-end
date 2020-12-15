@@ -44,10 +44,7 @@ class Navbar extends React.Component {
                             <NavLink to='/APropos'>
                                 À propos
                                 </NavLink>
-                            {/* <NavLink to='/Contact' activeStyle> */}
-                            <NavLink to='/Contact'>
-                                Contact
-                                </NavLink>
+                            
                             {/* <NavLink to='/Inspirations' activeStyle> */}
                             <NavLink to='/Inspirations'>
                                 Nos sources d'inspiration
@@ -56,6 +53,11 @@ class Navbar extends React.Component {
                             <NavLink to='/QuiSommesNous'>
                                 Qui sommes-nous ?
                                 </NavLink>
+
+                                {/* <NavLink to='/Contact' activeStyle> */}
+                            <NavLink to='/Contact'>
+                                Contact
+                                </NavLink>
                         </NavMenu>
                     </Nav>
 
@@ -63,11 +65,7 @@ class Navbar extends React.Component {
                         <Route path="/APropos/">
                             <APropos />
                         </Route>
-
-                        <Route path="/Contact/">
-                            <Contact />
-                        </Route>
-
+                        
                         <Route path="/Inspirations/">
                             <Inspirations />
                         </Route>
@@ -75,6 +73,11 @@ class Navbar extends React.Component {
                         <Route path="/QuiSommesNous/">
                             <QuiSommesNous />
                         </Route>
+
+                        <Route path="/Contact/">
+                            <Contact />
+                        </Route>
+
 
                         <Route path="/">
                             <Home />

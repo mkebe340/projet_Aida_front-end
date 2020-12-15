@@ -16,7 +16,7 @@ class Home extends React.Component {
                 
                     <div className='row justify-content-around'>
                     
-                        <div className='col-6 mt-5 align-self-center'>
+                        <div className='col-6 mt-5 align-self-center home__text'>
                         <h1> Titre Home </h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis cumque magnam nulla aut recusandae veritatis reprehenderit magni exercitationem harum officia molestiae numquam
                              odit, quis fugit delectus? Voluptatem qui rem aliquid.</p>

@@ -2,16 +2,17 @@
     height: 400px;
 }
 
-p {
+.text1 {
+    text-align: justify;
+}
+
+.text1 > p {
     font-size: 12px;
     color: rgb(156, 150, 150);
 }
 
-h3 {
+.text1 > h3 {
     font-size: 18px;
     color: rgb(100, 81, 103);
 }
 
-.text1 {
-    text-align: justify;
-}

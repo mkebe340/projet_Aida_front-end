@@ -7,25 +7,13 @@ class APropos extends React.Component {
         return (
 
             <div className='propos'>
-                <h1>A propos </h1>
+
                 <div className='container'>
 
-                    <div className='row align-items-center '>
-                        <div className="propos_images col-4 mt-5 ">
-                            <div>
-                                <img src="./Apropos_img/Apropos_3.jpg" className="col-12 mb-3" alt="..." />
-                            </div>
-
-                            <div>
-                                <img src="./Apropos_img/Apropos_4.jpg" className="col-12 mb-3" alt="..." />
-                            </div>
-                            <div>
-                                <img src="./Apropos_img/Apropos_5.jpg" className="col-12 " alt="..." />
-                            </div>
-                        </div>
-
-                        <div className="propos_text col-8 col-xs-12">
-                            <h2>Pourquoi INPIRENEWS?</h2>
+                    <div className='row mt-5'>
+                       
+                        <div className="propos_text col-8 col-xs-12 ">
+                            <h2>A propos d'INPIRENEWS?</h2>
                             <p>
                                 "Allumez la radio ou la télé. Ouvrez un magazine d’actualité. De quoi parle-t-on aujourd’hui ?
                                 Comme hier, et comme le veut la règle d’or du journalisme, on vous racontera d’abord les
@@ -72,7 +60,21 @@ class APropos extends React.Component {
                                 nous voulons - aussi- révéler le meilleur. Ce n’est pas une utopie. C’est une réaction
                                 citoyenne. Et elle est à portée de clic."
                             </p>
+                            
                         </div>
+                        <div className="propos_images col-4 ">
+                            <div>
+                                <img src="./Apropos_img/Apropos_3.jpg" className="col-12 " alt="..." />
+                            </div>
+
+                            <div>
+                                <img src="./Apropos_img/Apropos_4.jpg" className="col-12 mt-5 mb-5" alt="..." />
+                            </div>
+                            <div>
+                                <img src="./Apropos_img/Apropos_5.jpg" className="col-12 " alt="..." />
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>

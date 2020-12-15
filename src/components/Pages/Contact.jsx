@@ -21,7 +21,7 @@ class Contact extends React.Component {
                     <div className="chat">
                         <div className="chat__header">
                             <div className="chat__headerInfo">
-                                <h3>Room name</h3>
+                                <h3>InspireNews</h3>
                                 <p>Last seen at...</p>
                             </div>
                         </div>

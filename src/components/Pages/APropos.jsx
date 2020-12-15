@@ -10,51 +10,21 @@ class APropos extends React.Component {
                 <h1>A propos </h1>
                 <div className='container'>
 
-                    <div className='row'>
-                        <div className="slide1 col-6 col-xs-12 ">
-                            <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
-                                <ol className="carousel-indicators">
-                                    <li data-target="#carouselExampleCaptions" data-slide-to="0" className="active"></li>
-                                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                                </ol>
-                                <div className="carousel-inner">
-                                    <div className="carousel-item active ">
-                                        <img src="../img/Portrait.jpg" alt="..." className="img-fluid" />
-                                        <div className="carousel-caption">
-
-                                            {/* <p>Crédit photo : </p>*/}
-                                        </div>
-                                    </div>
-                                    <div className="carousel-item ">
-                                        <img src="../img/Report_3.jpg" alt="..." className="img-fluid" />
-                                        <div className="carousel-caption">
-
-                                            {/* <p>crédit photo : </p>*/}
-                                        </div>
-                                    </div>
-                                    <div className="carousel-item  ">
-                                        <img src="../img/Report_1.jpg" alt="..." className="img-fluid" />
-                                        <div className="carousel-caption">
-
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <a className="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span className="sr-only">Previous</span>
-                                </a>
-                                <a className="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span className="sr-only">Next</span>
-                                </a>
-
+                    <div className='row align-items-center '>
+                        <div className="propos_images col-4 mt-5 ">
+                            <div>
+                                <img src="./Apropos_img/Apropos_3.jpg" className="col-12 mb-3" alt="..." />
                             </div>
 
+                            <div>
+                                <img src="./Apropos_img/Apropos_4.jpg" className="col-12 mb-3" alt="..." />
+                            </div>
+                            <div>
+                                <img src="./Apropos_img/Apropos_5.jpg" className="col-12 " alt="..." />
+                            </div>
                         </div>
 
-                        <div className="propos_text col-6 col-xs-12 text-justify">
+                        <div className="propos_text col-8 col-xs-12">
                             <h2>Pourquoi INPIRENEWS?</h2>
                             <p>
                                 "Allumez la radio ou la télé. Ouvrez un magazine d’actualité. De quoi parle-t-on aujourd’hui ?
@@ -79,7 +49,7 @@ class APropos extends React.Component {
                                 le réinventent, et parfois même le réenchantent. Et pourtant, ils font rarement la
                                 Une de l’actualité…
                             </p>
-                            
+
                                 De la rencontre de ces hommes et ces femmes engagés, à titre individuel, dans leur
                                 quartier, au sein d’une association ou en entreprise, est née cette volonté de les
                                 mettre en lumière.  Nous avons tant à apprendre de ces personnes inspirantes, de ces
@@ -89,17 +59,17 @@ class APropos extends React.Component {
                                 jeune génération, X, Y, ou Z, cherche des sources d’information alternatives aux médias
                                 traditionnels ?
                                <p>
-                                    Loin de nous l’idée d’occulter les problématiques du monde comme il va. Le pays des
-                                 Bisounours n’est pas plus notre modèle que Gotham City. Mais chaque solution doit
-                                  être traitée de la même manière que le problème lui-même. Ni plus, ni moins.
+                                Loin de nous l’idée d’occulter les problématiques du monde comme il va. Le pays des
+                                Bisounours n’est pas plus notre modèle que Gotham City. Mais chaque solution doit
+                                être traitée de la même manière que le problème lui-même. Ni plus, ni moins.
                                 </p>
                             <p>
-                                Cette plateforme que nous vous proposons aujourd’hui, nous l’avons pensée comme une 
-                                inspiration pour toutes celles et ceux qui veulent agir plutôt que subir. Certes, 
-                                les défis de notre époque sont innombrables. Mais des solutions existent, et elles 
-                                ne sont pas moins nombreuses. Aujourd’hui source de souffrance, voire d’impuissance, 
-                                le journalisme peut et doit être source d’espérance. Si l’homme est capable du pire, 
-                                nous voulons - aussi- révéler le meilleur. Ce n’est pas une utopie. C’est une réaction 
+                                Cette plateforme que nous vous proposons aujourd’hui, nous l’avons pensée comme une
+                                inspiration pour toutes celles et ceux qui veulent agir plutôt que subir. Certes,
+                                les défis de notre époque sont innombrables. Mais des solutions existent, et elles
+                                ne sont pas moins nombreuses. Aujourd’hui source de souffrance, voire d’impuissance,
+                                le journalisme peut et doit être source d’espérance. Si l’homme est capable du pire,
+                                nous voulons - aussi- révéler le meilleur. Ce n’est pas une utopie. C’est une réaction
                                 citoyenne. Et elle est à portée de clic."
                             </p>
                         </div>

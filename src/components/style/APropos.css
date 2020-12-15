@@ -1,16 +1,23 @@
-.propos>.container {
-    display: flex;
-    text-align: justify;
-}
 
 .propos > h1 {
   margin-left: 15px;
+ /* margin-bottom: 60px;*/
 }
-
-.image {
-    margin-right: 10px;
+.propos_text > h2 {
+    text-align: center;
+    margin-bottom: 20px;
 }
-
 .propos_text > p{
     text-align: justify;
+  
+}
+.propos_text{
+    border-radius: 30px;
+    border: 1px solid #edeea1c2;
+    background-color: rgb(195, 241, 67);
+}
+.propos_images > div > img{
+    border-radius: 30px;
+    border: 1px solid #edeea1;
+    background-color: rgb(205, 248, 86);
 }

@@ -9,7 +9,7 @@ export const Nav = styled.nav` // RECTANGLE
     height: 65px;
     display: flex;
     justify-content: space-between;
-    padding:20px;
+    padding:25px;
     z-index: 10;
 `
 

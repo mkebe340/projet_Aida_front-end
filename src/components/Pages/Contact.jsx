@@ -10,63 +10,66 @@ class Contact extends React.Component {
 
     }
 
-    
+
     render() {
         return (
 
-            <div>
-               <div className="mb-5 "><h1>Contact </h1></div> 
-              
-                <div className="box__chat">
-                    <div className="chat">
-                        <div className="chat__header">
-                            <div className="chat__headerInfo">
-                                <h3>Room name</h3>
-                                <p>Last seen at...</p>
-                            </div>
-                        </div>
-                        <div className="chat__body">
-                            <p className="chat__message chat__reciever">
-                                <span className="chat__name">Aida</span>
+            <div className="">
+                <h1>Contact </h1>
+                    <div className="row justify-content-center contact_fond">
+
+                        <div className="box__contact mb-3 col-md-3 col-sm-12">
+
+                            <div className="contact mb-2 mt-2 ">
+                                {/*------------------Header*/}
+                                <div className="contact__header">
+                                    <div className="contact__headerInfo">
+                                        <h3>InspireNews</h3>
+                                        <p>Last seen at...</p>
+                                    </div>
+                                </div>
+                                {/*------------------body*/}
+                                <div className="contact__body">
+                                    <p className="contact__message contact__reciever">
+                                        <span className="contact__name">Aida</span>
                                     This is a message, Lorem ipsum dolor sit amet,
                                      consectetur adipisicing elit. Voluptatum architecto ut,
                                       totam labore quis debitis facere laborum autem distinctio,
-                                       ullam blanditiis voluptatem! 
-                                    <span className="chat__timestamp">
-                                    {new Date().toUTCString()}
-                                </span>
-                            </p>
+                                       ullam blanditiis voluptatem!
+                                    <span className="contact__timestamp">
+                                            {new Date().toUTCString()}
+                                        </span>
+                                    </p>
 
-                            <p className="chat__message">
-                                <span className="chat__name">Visiteur</span>
-                                <div className="copy">
-                                <form className="form__copy">
-                                    <textarea ref={(textarea) => this.textArea = textarea} value="adresse@email.com" />
-                                </form>
-                                <button onClick={() => this.copyCodeToClipboard()}>copy</button>
+                                    <p className="contact__message">
+                                        <span className="contact__name">Visiteur</span>
+                                        <div className="copy">
+                                            <form className="form__copy">
+                                                <textarea ref={(textarea) => this.textArea = textarea} value="adresse@email.com" />
+                                            </form>
+                                            <button onClick={() => this.copyCodeToClipboard()}>copy</button>
+                                        </div>
+                                        <span className="contact__timestamp">
+                                            {new Date().toUTCString()}
+                                        </span>
+                                    </p>
                                 </div>
-                                <span className="chat__timestamp">
-                                {new Date().toUTCString()}
-                                </span>
-                            </p>
+                                {/*------------------Footer*/}
+                                <div className="contact__footer">
+                                    <div>
+                                        <div className="faux__input">
 
-                        </div>
-                        <div className="chat__footer">
-                            <div>
-                                <div className="faux__input">
-                                    
-                                   clique sur le boutton
+                                            clique sur le boutton
                                 </div>
-                                <button type="submit">
-                                <a href='mailto: addresse@email.com'>send an email</a>
-                                </button>
+                                        <button type="submit">
+                                            <a href='mailto: addresse@email.com'>send an email</a>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
                     </div>
-                </div>
-
-
-
 
             </div>
         )
@@ -78,7 +81,7 @@ class Contact extends React.Component {
 export default Contact;
 
 
-  {/*  <div className="container test ">
+{/*  <div className="container test ">
                     <div className='row justify-content-center'>
                         <div className="col-6 color mt-5 ">
                             <div className="mt-3"> 

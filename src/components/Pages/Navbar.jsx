@@ -77,8 +77,7 @@ class Navbar extends React.Component {
                         <Route path="/Contact/">
                             <Contact />
                         </Route>
-
-
+                        
                         <Route path="/">
                             <Home />
                         </Route>

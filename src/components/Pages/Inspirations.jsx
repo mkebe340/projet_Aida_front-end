@@ -3,53 +3,25 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import '../style/Inspirations.css'
 
 
-
-
 class Inspirations extends React.Component {
   constructor() {
     super();
     this.click = this.click.bind(this)
     this.state = {
 
-      list: [{
-        type: 'association',
-        theme: 'recrutement',
-        titre: 'la cravate',
-        texte: 'blalalalal',
-        description: 'bleueueueueu',
-        imgUrl: 'https://res.cloudinary.com/fat2626/image/upload/v1607940921/aidaBlog/gcculvegmwh3mcto3dsu.jpg'
-      },
-
-      {
-        type: 'association',
-        theme: 'recrutement',
-        titre: 'la cravate2',
-        texte: 'blalalalal',
-        description: 'bleueueueueu',
-        imgUrl: 'https://res.cloudinary.com/fat2626/image/upload/v1607940896/aidaBlog/o1eqegnuylyqtexo2wlg.jpg'
-      }]
+      list: []
 
     }
   }
 
   componentDidMount() {
     // Nous récupérons la liste  du dashboard
-    // fetch('http://localhost:3000/articles/')
-    //  .then(res => res.json())
-    //  .then(json => {
-    //   console.log(json)
-    //   this.setState({
-    //type:"bleu",
-    // theme: 'societal',
-    // titre: "Les inspir",
-    //    texte: "blalalalala blalalal",
-    //    description: "un pays original",
-    //    imgUrl:"../img/happyMan.jpg",
-
-
-    //    articles: json.liste
-    //  })
-    // })
+    fetch('http://localhost:3000/articles')
+      .then(res => res.json())
+      .then(json => {
+        console.log(json)
+        this.setState({list:json})
+      })
   }
 
   click(url) {
@@ -74,44 +46,60 @@ class Inspirations extends React.Component {
   }
   render() {
     return (
-      <div className="App">
+      <div className="Inspirations">
 
-        <section>
-          {this.state.list.map((elem, index) => {
 
-            return (
-              <div className='container' onClick={() => this.click(elem.url)}>
+        {this.state.list.map((elem, index) => {
+
+          return (
+            <section>
+              <div className='container1' onClick={() => this.click(elem.url)}>
                 <div className="row">
-                  <div className="color3 carre  col order-last">
+                  <div className="color3 carre order-last">
+
                     <div className='titre'>
-                      <h3> <a>{elem.titre} </a> </h3>
+                      <h3> {elem.titre} </h3>
                     </div>
+
+                    <div className='description'>
+                      <p> {elem.description}</p>
+                    </div>
+
                     <div className='text'>
-
-                      <p><a href="#" text='text'> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                            qui officia deserunt mollit anim id est laborum."</a></p>
+                      <p> {elem.texte}</p>
                     </div>
 
-                    <div className='img_video_Podcast'> 
-                      <img className='photo' src={elem.imgUrl} alt="image Aida" />
-
-                      <div className='text'>
-
-                        <p><a href="#" text='text'> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                                qui officia deserunt mollit anim id est laborum."</a></p>
-                      </div>
+                    <div className='img_video_Podcast'>
+                      <img className='' src={elem.imageUrl[0]} />
                     </div>
+
+                    <div className='img_video_Podcast'>
+                      <img className='' src={elem.videoUrl} />
+                    </div>
+
+
                   </div>
                 </div>
-
               </div>
-            )
-          })}
-        </section>
+
+
+          )
+
+            </section>
+
+          )
+        }
+        )}
+
       </div>
+
+
+
+
     );
   }
 }
+
 
 export default Inspirations;
 

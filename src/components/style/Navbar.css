@@ -13,3 +13,9 @@
  margin: 0px;
  padding: 0px;
 }
+
+.navbar-nav>Link{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+}

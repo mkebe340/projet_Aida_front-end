@@ -12,7 +12,7 @@ class APropos extends React.Component {
 
                     <div className='row mt-5'>
                        
-                        <div className="propos_text col-8 col-xs-12 ">
+                        <div className="propos_text mb-4 col-md-8 col-sm-12 ">
                             <h2>A propos d'INPIRENEWS?</h2>
                             <p>
                                 "Allumez la radio ou la télé. Ouvrez un magazine d’actualité. De quoi parle-t-on aujourd’hui ?
@@ -62,7 +62,7 @@ class APropos extends React.Component {
                             </p>
                             
                         </div>
-                        <div className="propos_images col-4 ">
+                        <div className="propos_images col-md-4 col-sm-12 ">
                             <div>
                                 <img src="./Apropos_img/Apropos_3.jpg" className="col-12 " alt="..." />
                             </div>

@@ -47,7 +47,7 @@ class Inspirations extends React.Component {
   render() {
     return (
       <div className="Inspirations">
-
+            <h3>Inspiration</h3>
 
         {this.state.list.map((elem, index) => {
 

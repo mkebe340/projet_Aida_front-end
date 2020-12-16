@@ -14,8 +14,7 @@
  padding: 0px;
 }
 
-.navbar-nav>Link{
-    display: flex;
-    justify-content: space-between;
-    padding-right: 10px;
+.footer{
+    margin-top: 200px;
+    background-color:  #faf9f9e3;
 }

@@ -23,29 +23,42 @@ class Home extends React.Component {
                                     <li data-target="#carouselExampleCaptions" data-slide-to="0" ></li>
                                     <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
                                     <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+
                                 </ol>
                                 <div className="carousel-inner ">
                                     <div className="carousel-item active  ">
-                                    <button className="button__color" > <Link to="/Inspirations">  <img src="./imag/echecs.png" alt="deux personnes jouent aux echecs" className="img-fluid" /></Link></button> 
+                                    <button className="button__color" > <Link to="/Inspirations">  <img src="./img/echecs.png" alt="deux personnes jouent aux echecs" className="img-fluid" /></Link></button> 
                                         <div className="carousel-caption">
 
                                             {/* <p>Crédit photo : </p>*/}
                                         </div>
                                     </div>
                                     <div className="carousel-item ">
-                                      <button className="button__color"> <Link to="/Inspirations">  <img src="./imag/art_femme.jpeg" alt="une femme qui regard de l'art africaine" className="img-fluid" /></Link></button>
+                                      <button className="button__color"> <Link to="/Inspirations">  <img src="./img/art_femme.jpeg" alt="une femme qui regard de l'art africaine" className="img-fluid" /></Link></button>
                                         <div className="carousel-caption">
 
                                             {/* <p>crédit photo : </p>*/}
                                         </div>
                                     </div>
+
                                     <div className="carousel-item  ">
-                                     <button className="button__color"> <Link to="/Inspirations"> <img src="./imag/gens_jpeg.jpg" alt="une foule" className="img-fluid" /> </Link> </button>
+                                     <button className="button__color"> <Link to="/Inspirations"> <img src="./img/voile.jpg" alt="une femme" className="img-fluid" /> </Link> </button>
                                         <div className="carousel-caption">
                                             {/* <p>crédit photo : </p>*/}
 
                                         </div>
                                     </div>
+
+                                    <div className="carousel-item  ">
+                                     <button className="button__color"> <Link to="/Inspirations"> <img src="./img/gens_jpeg.jpg" alt="une foule" className="img-fluid" /> </Link> </button>
+                                        <div className="carousel-caption">
+                                            {/* <p>crédit photo : </p>*/}
+
+                                        </div>
+                                    </div>
+
+                                   
                                 </div>
 
                                 <a href="#carouselExampleCaptions" className="carousel-control-prev" role="button" data-slide="prev">

@@ -4,12 +4,13 @@ import { Avatar, IconButton } from '@material-ui/core';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
+import '../style/footer.css'
 
 class Footer extends React.Component {
     render(){
         return(
             <div>
-
+                
                 <div className=" footer  ">
                     <div className="container">
                         <div className="row justify-content-around">
@@ -21,9 +22,9 @@ class Footer extends React.Component {
                             </div>
                             <div>
                                 <h5>Réseaux sociaux</h5>
-                                <IconButton> <InstagramIcon/></IconButton>
-                                <IconButton><TwitterIcon/></IconButton>
-                                <IconButton> <FacebookIcon/></IconButton>
+                                <IconButton> <InstagramIcon style={{ color: "rgb(205, 248, 86)" }}/></IconButton>
+                                <IconButton><TwitterIcon style={{ color: "rgb(205, 248, 86)" }}/></IconButton>
+                                <IconButton> <FacebookIcon style={{ color: "rgb(205, 248, 86)" }}/></IconButton>
                             </div>
                         </div>
                     </div>

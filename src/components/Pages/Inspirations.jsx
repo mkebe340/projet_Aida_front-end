@@ -40,7 +40,6 @@ class Inspirations extends React.Component {
 
         <section className='container1'>
           {this.state.list.map((elem, index) => {
-            <h3>Inspiration</h3>
 
             return (
 
@@ -73,6 +72,8 @@ class Inspirations extends React.Component {
           )
           }
         </section>
+        <div className="blanc"></div>
+
       </div >
     );
   }

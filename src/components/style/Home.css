@@ -8,22 +8,11 @@
     background-color: white;
     border-radius: 10px;
 }
-.boite1{
-   /* background-color: rgb(251, 227, 231);*/
-    border: gray solid 2px;
-    color: black;
-}
-.boite2{
-    background-color: rgb(255, 236, 239);
-    border:gray solid 2px;
-}
-
-.boite3{
-    background-color: rgb(246, 226, 229);
-    border: gray solid 2px;
-}
 
 .button__color{
     border: none;
     background-color: rgb(205, 248, 86);
+}
+.blanc{
+    padding: 100px;
 }

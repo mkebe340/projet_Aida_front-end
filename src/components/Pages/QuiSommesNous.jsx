@@ -87,7 +87,7 @@ class QuiSommesNous extends React.Component {
                         </div>
                     </div>
                 </div>
-
+                <div className="blanc"></div>
 
             </div>
 

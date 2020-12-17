@@ -16,7 +16,7 @@ class Home extends React.Component {
                 <div className='container' >
 
                     <div className='row'>
-                        <div className="home__img col-8 mt-5">
+                        <div className="home__img col-md-8 col-sm-12 mt-5">
                             <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
 
                                 <ol className="carousel-indicators">
@@ -72,19 +72,19 @@ class Home extends React.Component {
 
                             </div>
                         </div>
-                        <div className=' col-4 align-self-center home__text'>
+                        <div className=' col-md-4 col-sm-12 mt-5 align-self-center home__text'>
                             <h1> Titre Home </h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis cumque magnam nulla aut recusandae veritatis reprehenderit magni exercitationem harum officia molestiae numquam
                              odit, quis fugit delectus? Voluptatem qui rem aliquid.</p>
                             <Link to='/APropos'>
-                                <div className="home__button"><button> A props</button></div>
+                                <div className="home__button"><button> A propos</button></div>
                             </Link>
                         </div>
 
 
 
                     </div>
-
+                    <div className="blanc"></div>
 
                 </div>
 

@@ -11,7 +11,7 @@ class APropos extends React.Component {
                 <div className='container'>
 
                     <div className='row mt-5'>
-                       
+
                         <div className="propos_text mb-4 col-md-8 col-sm-12 ">
                             <h2>A propos d'INPIRENEWS?</h2>
                             <p>
@@ -60,23 +60,27 @@ class APropos extends React.Component {
                                 nous voulons - aussi- révéler le meilleur. Ce n’est pas une utopie. C’est une réaction
                                 citoyenne. Et elle est à portée de clic."
                             </p>
-                            
+
                         </div>
                         <div className="propos_images col-md-4 col-sm-12 ">
                             <div>
                                 <img src="./Apropos_img/Apropos_3.jpg" className="col-12 " alt="..." />
+                                
                             </div>
 
                             <div>
                                 <img src="./Apropos_img/Apropos_4.jpg" className="col-12 mt-5 mb-5" alt="..." />
+                                
                             </div>
                             <div>
                                 <img src="./Apropos_img/Apropos_5.jpg" className="col-12 " alt="..." />
+                               
                             </div>
                         </div>
 
                     </div>
                 </div>
+                <div className="blanc"></div>
             </div>
 
         )

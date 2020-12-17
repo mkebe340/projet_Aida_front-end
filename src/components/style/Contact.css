@@ -1,11 +1,9 @@
-.contact_corp{
-    background-image: url("../style/img/letters.jpg");
-}
+
 /* container*/
 .contact_fond{
     margin:0px;
     background-image: url("../style/img/letters.jpg");
-
+    background-repeat: no-repeat;
 }
 
 .box__contact{
@@ -88,7 +86,7 @@
 .copy > .form__copy > textarea{
    
   
-    background-color: rgb(255, 249, 247);
+    background-color: rgb(250, 255, 230);
     overflow: hidden;
     resize: none;
     border: none;
@@ -148,4 +146,11 @@
 
 .contact__footer > div > button > a {
     color: black;
+}
+
+.footer__contact__fond{
+    background-image: url("../style/img/letters.jpg");
+   /* border:chocolate 1px solid;*/
+    padding: 100px;
+    background-position: end;
 }

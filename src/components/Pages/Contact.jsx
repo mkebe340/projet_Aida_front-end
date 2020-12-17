@@ -15,9 +15,9 @@ class Contact extends React.Component {
     render() {
         return (
 
-            <div className="">
+            <div className=" ">
                 <h1>Contact </h1>
-                <div className="row justify-content-center contact_fond">
+                <div className="row justify-content-center  contact_fond">
 
                     <div className="box__contact mb-3 col-md-3 col-sm-12">
 
@@ -73,7 +73,7 @@ class Contact extends React.Component {
                     </div>
 
                 </div>
-
+                <div className="footer__contact__fond"></div>
             </div>
         )
     }

@@ -4,41 +4,10 @@ import '../style/Home.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import APropos from '../Pages/APropos';
+import Inspirations from '../Pages/Inspirations'
 
 class Home extends React.Component {
-    constructor() {
-        super();
-        this.click = this.click.bind(this)
-        this.state = {
-            list: []
-        }
-    }
 
-    componentDidMont() {
-        fetch('http://localhost:3000/articles/')
-            .fetch(res => res.json())
-            .then(json => {
-                console.log(json)
-                this.setState({ list: json })
-            })
-    }
-
-
-    click(url) {
-        fetch(url)
-            .then(res => res.json())
-            .then(json => {
-                console.log(json)
-                this.setState({
-                    type: "bleu",
-                    theme: 'societal',
-                    titre: "Les inspir",
-                    texte: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis cumque magnam nulla aut recusandae veritatis reprehenderit magni exercitationem harum officia molestiae numquam",
-                    description: "un pays original",
-                    imgUrl: "../img/happyMan.jpg",
-                })
-            })
-    }
 
     render() {
         return (
@@ -46,9 +15,64 @@ class Home extends React.Component {
 
                 <div className='container' >
 
-                    <div className='row justify-content-around'>
+                    <div className='row'>
+                        <div className="home__img col-8 mt-5">
+                            <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
 
-                        <div className='col-6 mt-5 align-self-center home__text'>
+                                <ol className="carousel-indicators">
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="0" ></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+
+                                </ol>
+                                <div className="carousel-inner ">
+                                    <div className="carousel-item active  ">
+                                    <button className="button__color" > <Link to="/Inspirations">  <img src="./img/echecs.png" alt="deux personnes jouent aux echecs" className="img-fluid" /></Link></button> 
+                                        <div className="carousel-caption">
+
+                                            {/* <p>Crédit photo : </p>*/}
+                                        </div>
+                                    </div>
+                                    <div className="carousel-item ">
+                                      <button className="button__color"> <Link to="/Inspirations">  <img src="./img/art_femme.jpeg" alt="une femme qui regard de l'art africaine" className="img-fluid" /></Link></button>
+                                        <div className="carousel-caption">
+
+                                            {/* <p>crédit photo : </p>*/}
+                                        </div>
+                                    </div>
+
+                                    <div className="carousel-item  ">
+                                     <button className="button__color"> <Link to="/Inspirations"> <img src="./img/voile.jpg" alt="une femme" className="img-fluid" /> </Link> </button>
+                                        <div className="carousel-caption">
+                                            {/* <p>crédit photo : </p>*/}
+
+                                        </div>
+                                    </div>
+
+                                    <div className="carousel-item  ">
+                                     <button className="button__color"> <Link to="/Inspirations"> <img src="./img/gens_jpeg.jpg" alt="une foule" className="img-fluid" /> </Link> </button>
+                                        <div className="carousel-caption">
+                                            {/* <p>crédit photo : </p>*/}
+
+                                        </div>
+                                    </div>
+
+                                   
+                                </div>
+
+                                <a href="#carouselExampleCaptions" className="carousel-control-prev" role="button" data-slide="prev">
+                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span className="sr-only">Previous</span>
+                                </a >
+                                <a href="#carouselExampleCaptions" className="carousel-control-next" role="button" data-slide="next">
+                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span className="sr-only">Next</span>
+                                </a >
+
+                            </div>
+                        </div>
+                        <div className=' col-4 align-self-center home__text'>
                             <h1> Titre Home </h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis cumque magnam nulla aut recusandae veritatis reprehenderit magni exercitationem harum officia molestiae numquam
                              odit, quis fugit delectus? Voluptatem qui rem aliquid.</p>
@@ -57,26 +81,8 @@ class Home extends React.Component {
                             </Link>
                         </div>
 
-                        <div className=" col-4 mt-5 ">
-                            {this.state.list.map((elm, index) => {
-                                return (
 
-                                    <div  onClick={() => this.click(elm.url)}>
-                                        
-                                        <div className='boite1'>
-                                            <h3> titre{elm.titre} </h3>
-                                            <p> {elm.description}</p>
-                                            <p> {elm.texte}</p>
-                                            <img className=''alt="..." src={elm.imageUrl[0]} />
-                                        </div>
-                                    </div>
 
-                                )
-                            
-                            })}
-
-                        </div>
-                    
                     </div>
 
 
@@ -92,12 +98,17 @@ class Home extends React.Component {
 
 
 
-export default Home;     
+export default Home;
 
-{/*<div className='boite2  mt-5  '>
+{/* <div className=" col-4 mt-5 ">
+                        <div className='boite1  mt-5  '>
+                                <h1>BOITE 1</h1>
+                            </div>
+                        <div className='boite2  mt-5  '>
                                 <h1>BOITE 2</h1>
                             </div>
 
                             <div className='boite2  mt-5 '>
                                 <h1>BOITE 3</h1>
-                        </div>*/}
+                        </div>
+                      </div>*/}

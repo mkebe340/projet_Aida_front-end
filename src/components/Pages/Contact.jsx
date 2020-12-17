@@ -1,6 +1,7 @@
 import React from 'react';
 import '../style/Contact.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { Avatar, IconButton } from '@material-ui/core';
 
 class Contact extends React.Component {
 
@@ -16,60 +17,62 @@ class Contact extends React.Component {
 
             <div className="">
                 <h1>Contact </h1>
-                    <div className="row justify-content-center contact_fond">
+                <div className="row justify-content-center contact_fond">
 
-                        <div className="box__contact mb-3 col-md-3 col-sm-12">
+                    <div className="box__contact mb-3 col-md-3 col-sm-12">
 
-                            <div className="contact mb-2 mt-2 ">
-                                {/*------------------Header*/}
-                                <div className="contact__header">
-                                    <div className="contact__headerInfo">
-                                        <h3>InspireNews</h3>
-                                        <p>Last seen at...</p>
-                                    </div>
+                        <div className="contact mb-2 mt-2 ">
+                            {/*------------------Header*/}
+                            <div className="contact__header">
+                                <div className="contact__headerInfo d-flex">
+                                    <Avatar />
+                                    <h3>InspireNews</h3>
                                 </div>
-                                {/*------------------body*/}
-                                <div className="contact__body">
-                                    <p className="contact__message contact__reciever">
-                                        <span className="contact__name">Aida</span>
+                                    
+                                
+                            </div>
+                            {/*------------------body*/}
+                            <div className="contact__body">
+                                <p className="contact__message contact__reciever">
+                                    <span className="contact__name">Aida</span>
                                     This is a message, Lorem ipsum dolor sit amet,
                                      consectetur adipisicing elit. Voluptatum architecto ut,
                                       totam labore quis debitis facere laborum autem distinctio,
                                        ullam blanditiis voluptatem!
                                     <span className="contact__timestamp">
-                                            {new Date().toUTCString()}
-                                        </span>
-                                    </p>
+                                        {new Date().toUTCString()}
+                                    </span>
+                                </p>
 
-                                    <p className="contact__message">
-                                        <span className="contact__name">Visiteur</span>
-                                        <div className="copy">
-                                            <form className="form__copy">
-                                                <textarea ref={(textarea) => this.textArea = textarea} value="adresse@email.com" />
-                                            </form>
-                                            <button onClick={() => this.copyCodeToClipboard()}>copy</button>
-                                        </div>
-                                        <span className="contact__timestamp">
-                                            {new Date().toUTCString()}
-                                        </span>
-                                    </p>
-                                </div>
-                                {/*------------------Footer*/}
-                                <div className="contact__footer">
-                                    <div>
-                                        <div className="faux__input">
-
-                                            clique sur le boutton
-                                </div>
-                                        <button type="submit">
-                                            <a href='mailto: addresse@email.com'>send an email</a>
-                                        </button>
+                                <p className="contact__message">
+                                    <span className="contact__name">Visiteur</span>
+                                    <div className="copy">
+                                        <form className="form__copy">
+                                            <textarea ref={(textarea) => this.textArea = textarea} value="adresse@email.com" />
+                                        </form>
+                                        <button onClick={() => this.copyCodeToClipboard()}>copy</button>
                                     </div>
+                                    <span className="contact__timestamp">
+                                        {new Date().toUTCString()}
+                                    </span>
+                                </p>
+                            </div>
+                            {/*------------------Footer*/}
+                            <div className="contact__footer">
+                                <div>
+                                    <div className="faux__input">
+
+                                        clique sur le boutton
+                                </div>
+                                    <button type="submit">
+                                        <a href='mailto: addresse@email.com'>send an email</a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
-
                     </div>
+
+                </div>
 
             </div>
         )

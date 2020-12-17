@@ -12,7 +12,7 @@ import APropos from '../Pages/APropos';
 import Inspirations from '../Pages/Inspirations'
 import QuiSommesNous from '../Pages/QuiSommesNous'
 import Contact from '../Pages/Contact';
-
+import Footer from '../Pages/footer'
 
 
 
@@ -23,34 +23,34 @@ class Navbar extends React.Component {
         return (
             <div>
                 <Router>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <Link className="navbar-brand" to='/'> <div className='tag'>
-                                    <i className="fas fa-hands-helping"></i>
-                                    <div className='NavLink'>
-                                        <h1> INSPIRENEWS.FR</h1>
-                                    </div>
-                                </div></Link>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse flex-row-reverse" id="navbarNavAltMarkup">
-              <div className="navbar-nav">
-                <Link className="nav-link active" to='/'>Home <span className="sr-only">(current)</span></Link>
-                <Link className="nav-link" to="/APropos">A propos</Link>
-                <Link className="nav-link" to="/Inspirations">Nos sources d'inspiration</Link>
-                <Link className="nav-link" to="/QuiSommesNous" > Qui sommes-nous ?</Link>
-                <Link className="nav-link" to="/Contact" > Contact</Link>
+                    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                        <Link className="navbar-brand" to='/'> <div className='tag'>
+                            <i className="fas fa-hands-helping"></i>
+                            <div className='NavLink'>
+                                <h1> INSPIRENEWS.FR</h1>
+                            </div>
+                        </div></Link>
+                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
+                        </button>
+                        <div className="collapse navbar-collapse flex-row-reverse" id="navbarNavAltMarkup">
+                            <div className="navbar-nav">
+                                <Link className="nav-link active" to='/'>Home <span className="sr-only">(current)</span></Link>
+                                <Link className="nav-link" to="/APropos">A propos</Link>
+                                <Link className="nav-link" to="/Inspirations">Nos sources d'inspiration</Link>
+                                <Link className="nav-link" to="/QuiSommesNous" > Qui sommes-nous ?</Link>
+                                <Link className="nav-link" to="/Contact" > Contact</Link>
 
-              </div>
-              
-            </div>
-            
-          </nav>
-          <Switch>
+                            </div>
+
+                        </div>
+
+                    </nav>
+                    <Switch>
                         <Route path="/APropos/">
                             <APropos />
                         </Route>
-                        
+
                         <Route path="/Inspirations/">
                             <Inspirations />
                         </Route>
@@ -62,14 +62,16 @@ class Navbar extends React.Component {
                         <Route path="/Contact/">
                             <Contact />
                         </Route>
-                        
+
                         <Route path="/">
                             <Home />
                         </Route>
                     </Switch>
-          
-                        </Router>
-        </div>
+                    <Footer />
+                </Router>
+
+
+            </div>
         )
     }
 }

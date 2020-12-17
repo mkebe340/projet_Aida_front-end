@@ -22,3 +22,8 @@
     background-color: rgb(246, 226, 229);
     border: gray solid 2px;
 }
+
+.button__color{
+    border: none;
+    background-color: rgb(205, 248, 86);
+}

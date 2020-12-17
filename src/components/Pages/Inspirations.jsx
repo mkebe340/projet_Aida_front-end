@@ -40,6 +40,7 @@ class Inspirations extends React.Component {
 
         <section className='container1'>
           {this.state.list.map((elem, index) => {
+            <h3>Inspiration</h3>
 
             return (
 

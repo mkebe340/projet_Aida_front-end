@@ -27,21 +27,21 @@ class QuiSommesNous extends React.Component {
                                         <img src="../img/Portrait.jpg" alt="..." className="img-fluid" />
                                         <div className="carousel-caption">
 
-                                            {/* <p>Crédit photo : </p>*/}
+                                            <p>photo : Laurence Roustandjee </p>
                                         </div>
                                     </div>
                                     <div className="carousel-item ">
                                         <img src="../img/Report_3.jpg" alt="..." className="img-fluid" />
                                         <div className="carousel-caption">
 
-                                            {/* <p>crédit photo : </p>*/}
+                                             <p>photo : Laurence Roustandjee </p>
                                         </div>
                                     </div>
                                     <div className="carousel-item  ">
                                         <img src="../img/Report_1.jpg" alt="..." className="img-fluid" />
                                         <div className="carousel-caption">
 
-
+                                            <p>photo : Laurence Roustandjee </p>
                                         </div>
                                     </div>
                                 </div>

@@ -20,7 +20,7 @@ class Inspirations extends React.Component {
       .then(res => res.json())
       .then(json => {
         console.log(json)
-        this.setState({list:json})
+        this.setState({ list: json })
       })
   }
 
@@ -31,71 +31,48 @@ class Inspirations extends React.Component {
       .then(json => {
         console.log(json)
         // nous stokons dans currentPokemon les informations du pokemon selectionner
-        this.setState({
-          type: "bleu",
-          theme: 'societal',
-          titre: "Les inspir",
-          texte: "blalalalala blalalal",
-          description: "un pays original",
-          imgUrl: "../img/happyMan.jpg",
 
-
-          //articles: json.list
-        })
       })
   }
   render() {
     return (
       <div className="Inspirations">
 
+        <section className='container1'>
+          {this.state.list.map((elem, index) => {
 
-        {this.state.list.map((elem, index) => {
+            return (
 
-          return (
-            <section>
-              <div className='container1' onClick={() => this.click(elem.url)}>
-                <div className="row">
-                  <div className="color3 carre order-last">
+              <div className="row" onClick={() => this.click(elem.url)}>
+                <div className="color3 carre order-last">
 
-                    <div className='titre'>
-                      <h3> {elem.titre} </h3>
-                    </div>
+                  <div className='titre'>
+                    <h3> {elem.titre} </h3>
+                  </div>
 
-                    <div className='description'>
-                      <p> {elem.description}</p>
-                    </div>
+                  <div className='description'>
+                    {elem.description}
+                  </div>
 
-                    <div className='text'>
-                      <p> {elem.texte}</p>
-                    </div>
+                  <div className='text'>
+                   {elem.texte}
+                  </div>
 
-                    <div className='img_video_Podcast'>
-                      <img className='' src={elem.imageUrl[0]} />
-                    </div>
+                  <div className='img_video_Podcast'>
+                    <img className='' src={elem.imageUrl[0]} />
+                  </div>
 
-                    <div className='img_video_Podcast'>
-                      <img className='' src={elem.videoUrl} />
-                    </div>
-
-
+                  <div className='img_video_Podcast'>
+                    <img className='' src={elem.videoUrl} />
                   </div>
                 </div>
               </div>
-
-
+            )
+          }
           )
-
-            </section>
-
-          )
-        }
-        )}
-
-      </div>
-
-
-
-
+          }
+        </section>
+      </div >
     );
   }
 }

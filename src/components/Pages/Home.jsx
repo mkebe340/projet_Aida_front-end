@@ -77,7 +77,7 @@ class Home extends React.Component {
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis cumque magnam nulla aut recusandae veritatis reprehenderit magni exercitationem harum officia molestiae numquam
                              odit, quis fugit delectus? Voluptatem qui rem aliquid.</p>
                             <Link to='/APropos'>
-                                <div className="home__button"><button> A props</button></div>
+                                <div className="home__button"><button> A propos</button></div>
                             </Link>
                         </div>
 

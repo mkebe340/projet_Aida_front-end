@@ -40,40 +40,49 @@ class Inspirations extends React.Component {
 
         <section className='container1'>
           {this.state.list.map((elem, index) => {
-            <h3>Inspiration</h3>
+
 
             return (
 
-              <div className="row" onClick={() => this.click(elem.url)}>
-                <div className="color3 carre order-last">
+              
+                <div className="row green" onClick={() => this.click(elem.url)}>
+                  <div className="bulles carre order-last">
+                  <div className="color3 carre order-last">
 
-                  <div className='titre'>
-                    <h3> {elem.titre} </h3>
-                  </div>
+                    <div className='titre'>
+                      <h3> {elem.titre} </h3>
+                    </div>
 
-                  <div className='description'>
-                    {elem.description}
-                  </div>
+                    <div className='description'>
+                      {elem.description}
+                    </div>
 
-                  <div className='text'>
-                   {elem.texte}
-                  </div>
+                    <div className='text'>
+                      {/* {elem.texte} */}
+                      <div className="content" dangerouslySetInnerHTML={{ __html: elem.texte }}></div>
 
-                  <div className='img_video_Podcast'>
-                    <img className='' src={elem.imageUrl[0]} />
-                  </div>
+                    </div>
 
-                  <div className='img_video_Podcast'>
-                    <img className='' src={elem.videoUrl} />
+                    <div className='img_video_Podcast'>
+                      <img className='' src={elem.imageUrl[0]} />
+                    </div>
+
+                    <div className='img_video_Podcast'>
+                      <iframe className='' src={elem.videoUrl} />
+                    </div>
+
+                    
                   </div>
                 </div>
-              </div>
+                </div>
             )
           }
           )
           }
         </section>
+
       </div >
+
     );
   }
 }

@@ -1,64 +1,58 @@
         .carre {
             /*border: solid #828887;*/
-            margin: 10px;
-            margin-left: 20px;
-            margin-right: 20px;
+            margin: 10px 0;
             padding: 15px;
             font-size: 30px;
             border-radius: 5px;
-            box-shadow: 1px 1px 1px 1px rgb(128, 160, 128);
             padding: 10px;
             white-space: 10px;
-            cursor: pointer;
+            cursor: pointe;
+            background-color: white;
         }
         
         .container1 {
             width: 100%;
-            height: 100%;
             display: flex;
             flex-direction: row;
-            background-origin: padding-box;
-            border-radius: 20px;
-            padding: 10px;
-            background-color: rgb(250, 253, 208);
-        }
-        
-        .color1 {
-            background-color: rgb(236, 26, 219);
-        }
-        
-        .color2 {
-            background-color: rgb(199, 200, 212);
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 30px 5%;
+            background-color: white;
         }
         
         .color3 {
-            background-color: rgb(177, 225, 177);
-        }
-        
-        .color4 {
-            background-color: rgb(120, 205, 226);
-        }
-        
-        .color5 {
-            background-color: rgb(216, 226, 120);
-        }
-        
-        .color6 {
-            background-color: rgb(79, 80, 170);
-        }
-        
-        .photo {
-            width: 300px;
-            height: 300px;
+            width: 100%;
         }
         
         .text {
             font-size: 12px;
-            color: grey;
             text-align: justify;
         }
         
         .text h3 {
             font-size: 18px;
             color: rgb(59, 5, 59)
+        }
+        
+        .img_video_Podcast {
+            width: 100%;
+        }
+        
+        .img_video_Podcast img {
+            width: 100%;
+        }
+        
+        .green {
+            width: 45%;
+        }
+        
+        iframe {
+            width: 100% !important;
+            border: 0;
+        }
+        
+        .bulles {
+            background-color: rgb(205, 248, 86);
+            border-radius: 30px;
+            width: 100%;
         }

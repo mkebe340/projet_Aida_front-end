@@ -3,16 +3,19 @@
 }*/
 
 .text1 {
+    border-radius: 30px;
+    border: 1px solid #b5f057c2;
+    /* background-color: rgb(195, 241, 67);*/
+    box-shadow: -1px 4px 20px -6px gray;
     text-align: justify;
 }
 
-.text1 > p {
+.text1>p {
     font-size: 12px;
     color: rgb(156, 150, 150);
 }
 
-.text1 > h3 {
+.text1>h3 {
     font-size: 18px;
     color: rgb(100, 81, 103);
 }
-

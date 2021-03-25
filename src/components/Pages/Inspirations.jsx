@@ -25,7 +25,7 @@ class Inspirations extends React.Component {
   }
 
   click(url) {
-    // url corresponds aux informations que nous devons récupérer sur le pokemon selectionner
+    // url corresponds aux informations que nous devons récupérer sur l'artile selectionné
     fetch(url)
       .then(res => res.json())
       .then(json => {
@@ -40,10 +40,6 @@ class Inspirations extends React.Component {
 
         <section className='container1'>
           {this.state.list.map((elem, index) => {
-<<<<<<< HEAD
-=======
-
->>>>>>> fa5471acd8097bf109c5c894b2335a8fc3a36fdc
 
             return (
 
@@ -83,10 +79,7 @@ class Inspirations extends React.Component {
           )
           }
         </section>
-<<<<<<< HEAD
         <div className="blanc"></div>
-=======
->>>>>>> fa5471acd8097bf109c5c894b2335a8fc3a36fdc
 
       </div >
 

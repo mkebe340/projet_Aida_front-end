@@ -13,7 +13,7 @@ class APropos extends React.Component {
                     <div className='row mt-5'>
 
                         <div className="propos_text mb-4 col-md-8 col-sm-12 ">
-                            <h2>A propos d'INPIRENEWS?</h2>
+                            <h2>A propos d'INPIRENEWS</h2>
                             <p>
                                 "Allumez la radio ou la télé. Ouvrez un magazine d’actualité. De quoi parle-t-on aujourd’hui ?
                                 Comme hier, et comme le veut la règle d’or du journalisme, on vous racontera d’abord les
